@@ -1,0 +1,41 @@
+#Ejercicio 1
+##Crear repositorio
+Creamos el rpositorio en GitHub
+![](imagenes gif/creacionRepositorio.png)
+
+##Clonar repositorio
+git clone git@github.com:CiffSCR/campusciff.git
+![](imagenes gif/clonacionRepositorio.png)
+
+#Commit inicial
+Primero añadimos 
+git commit -m "commit inicial"
+
+
+
+---Push inicial
+
+---Ignorar archivos
+
+
+---Añadir fichero 1.txt
+
+
+---Crear el tag v0.1
+
+
+---Subir el tag v0.1
+
+
+---Cuenta de GitHub
+
+
+---Uso social de GitHub
+
+
+---Crear una tabla
+
+
+---Colaboradores
+
+
