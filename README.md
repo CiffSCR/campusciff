@@ -49,8 +49,6 @@ Etiquetamos el estado actual del repositorio local
 
     git push --tag origin master
 
-![](imagenes%20git/creacionRepositorio.png)    
-
 ##Cuenta de GitHub
 ###Poner foto en la cuenta de GitHub
 ![](imagenes%20git/FotoPerfil.png)
