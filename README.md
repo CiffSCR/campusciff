@@ -86,4 +86,55 @@ Damos estrella al repositorio campusciff de los compañeros a los que seguimos
 Añadimos un colaborador al repositorio
 ![](imagenes%20git/AddColaborador.png)
 
-##
+
+#Ejercicio 2
+
+##Crear rama V0.2
+la creamos y nos posicionamos en ella con una única instrucción
+
+    git checkout -b V0.2
+
+##Creamos un fichero nuevo en la rama
+![](imagenes%20git/ficheroNuevo_V02.png)
+Lo añadimos al repositorio local
+
+    git add -A
+    git commit -m "Archivo 2.tx en la rama V0.2"
+    
+
+##Crear rama remota V0.2
+
+git push origin V0.2
+
+##Merge directo
+Nos posicionamos en la rama master
+
+    git checkout master
+    
+Hacemos el merge de la rama V0.2 en la master
+
+    git merge V0.2
+    
+##Merge con conflicto
+Modificamos el fichero hola.txt en la rama master. Después del último merge ya nos encontramos en la rama correcta:
+![](imagenes%20git/Hola.png)
+Lo subimos al repositorio local
+
+    git add 1.txt
+    git commit -m "modificacion fichero 1.txt"
+    
+nos posicionamos en la rama V0.2
+
+    git checkout V0.2
+    
+Modificamos el fichero 1.txt en la rama V0.2 y lo subimos al repositorio local, en la rama V0.2
+![](imagenes%20git/Adios.png)
+    
+    git add 1.txt
+    git commit -m "modificación fichero 1.txt en rama V0.2"
+    
+Nos posicionamos en la rama master y hacemos el merge de las dos ramas. Como lo que se ha cambiado es el fichero 1.txt, será el que se fusione
+
+    git checkout master
+    git merge V0.2
+Al estar modificadas en ambos casos la linea 1 con distinto texto, no se  puede hacer el merge automático, por lo que nos genera un archivo 1.txt con la fusion de ambas ramas
