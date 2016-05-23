@@ -31,19 +31,22 @@ Subimos al repositorio remoto los cambios en el readme.md y la carpeta con los p
 
 se sube el archivo .gitignore al repositorio local para que mantenga el fichero
 
-   git add -A
-   git commit -m "Segundo commit para subir .gitignore
+    git add -A
+    git commit -m "Segundo commit para subir .gitignore
    
 ##Añadir fichero 1.txt
 Creamos un fichero en la carpeta local del repositorio. Lo añadimos al control de Git y lo subimos al repositorio local.  En este caso sólo vamos a añadir el fichero creado, es decir, no se va a subir la modificación del readme.md
-  git add 1.txt
-  git commit -m "Commit para subir el fichero 1.txt"
+
+    git add 1.txt
+    git commit -m "Commit para subir el fichero 1.txt"
 
 ##Crear el tag v0.1
 Etiquetamos el estado actual del repositorio local
+    
     git tag V0.1
 
 ##Subir el tag V0.1
+
     git push --tag origin master
 
 ![](imagenes%20git/creacionRepositorio.png)    
@@ -73,7 +76,7 @@ Mostramos la lista de usuarios a los que seguimos:
 Damos estrella al repositorio campusciff de los compañeros a los que seguimos
 ![](imagenes%20git/Star.png)
 
-#Crear una tabla
+##Crear una tabla
 
 | Nombre    | GitHub   |
 | --------- |--------- |
@@ -84,3 +87,5 @@ Damos estrella al repositorio campusciff de los compañeros a los que seguimos
 #Colaboradores
 Añadimos un colaborador al repositorio
 ![](imagenes%20git/AddColaborador.png)
+
+##
