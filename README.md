@@ -104,7 +104,7 @@ Lo añadimos al repositorio local
 
 ##Crear rama remota V0.2
 
-git push origin V0.2
+    git push origin V0.2
 
 ##Merge directo
 Nos posicionamos en la rama master
@@ -137,4 +137,72 @@ Nos posicionamos en la rama master y hacemos el merge de las dos ramas. Como lo 
 
     git checkout master
     git merge V0.2
+
 Al estar modificadas en ambos casos la linea 1 con distinto texto, no se  puede hacer el merge automático, por lo que nos genera un archivo 1.txt con la fusion de ambas ramas
+![](imagenes%20git/Conflicto.png)
+
+##Listado de ramas
+listamos las ramas con merge
+
+    git branch --merged
+    
+Listamos las ramas sin merge
+
+    git branch --no-merged
+    
+El resultado es el que vemos a continuación
+![](imagenes%20git/ListRamas.png)
+
+##Arreglar conflicto
+Modificamos el archivo a mano para que contenga la información que queremos
+![](imagenes%20git/CommitSolved.png)
+Y lo subimos al repositorio local. Vamos a subir de paso el README.md y los ficheros de imagenes que estamos generando.
+
+    git add -A
+    git commit -m "commit con el mergeado del fichero hola.txt desde la versión V0.2"
+
+##Borrar rama
+creamos un tag V0.2 con la foto actual del repositorio
+
+    git tag V0.2
+    
+Borramos la rama V0.2
+
+    git branch -d V0.2
+    
+##Listado de cambios
+
+creamos el alias para tener toda la información en un solo comando
+
+    git config --global alias.list 'log --oneline --decorate --graph --all'
+    
+ejecutamos el comando creado
+    git list
+    
+![](imagenes%20git/Listado.png)
+
+##Crear una organización
+vamos a crear la organización campusciff-CiffSCR 
+![](imagenes%20git/Organizacion.png)
+
+##Crear equipos
+creamos el equipo de administradores y de colaboradores
+![](imagenes%20git/Administradores.png)
+![](imagenes%20git/Colaboradores.png)
+
+##Crear un Index.html
+Creamos un repositorio para la organizacion
+![](imagenes%20git/Comunitario.png)
+Seleccionamos la opción de generar página web para la organización
+![](imagenes%20git/Index.png)
+Completamos los pasos para la generación de la web.
+![](imagenes%20git/IndexFinal.png)
+
+<http://campusciff-ciffscr.github.io/comunitario/>
+
+##Crear pullRequest
+![](imagenes%20git/Fork.png)
+![](imagenes%20git/PullRequest1.png)
+Pinchamos New Pull Request
+![](imagenes%20git/PullRequest2.png)
+![](imagenes%20git/PullRequest3.png)
