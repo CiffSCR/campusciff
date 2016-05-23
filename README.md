@@ -206,3 +206,4 @@ Completamos los pasos para la generación de la web.
 Pinchamos New Pull Request
 ![](imagenes%20git/PullRequest2.png)
 ![](imagenes%20git/PullRequest3.png)
+
